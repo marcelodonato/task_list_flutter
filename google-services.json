@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "341565608443",
+    "firebase_url": "https://gymforlife-fe532.firebaseio.com",
+    "project_id": "gymforlife-fe532",
+    "storage_bucket": "gymforlife-fe532.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341565608443:android:c7fe4f13e1a89633c87b5e",
+        "android_client_info": {
+          "package_name": "com.example.gymforlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341565608443-3cdjskrou3antr262tikugrqe472md26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gymforlife",
+            "certificate_hash": "1f5343aa881edda5d15ebbc24dfdf737685382f0"
+          }
+        },
+        {
+          "client_id": "341565608443-og91408kb8jciadnnib0o2h4shbgpfaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE3IoicIBEYQuwxoKkQsXzaYQl4RQjY6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341565608443-og91408kb8jciadnnib0o2h4shbgpfaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341565608443:android:2d97f37cc8c43191c87b5e",
+        "android_client_info": {
+          "package_name": "com.example.task_list"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341565608443-og91408kb8jciadnnib0o2h4shbgpfaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE3IoicIBEYQuwxoKkQsXzaYQl4RQjY6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341565608443-og91408kb8jciadnnib0o2h4shbgpfaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
