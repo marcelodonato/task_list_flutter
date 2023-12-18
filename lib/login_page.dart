@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:task_list/auth_service.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({Key? key}) : super(key: key);
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   _LoginPageState createState() => _LoginPageState();

@@ -5,7 +5,7 @@ import 'package:task_list/list_screen.dart';
 import 'package:task_list/login_page.dart';
 
 class AuthCheck extends StatefulWidget {
-  AuthCheck({Key? key}) : super(key: key);
+  const AuthCheck({Key? key}) : super(key: key);
 
   @override
   _AuthCheckState createState() => _AuthCheckState();
@@ -19,7 +19,7 @@ class _AuthCheckState extends State<AuthCheck> {
     if (auth.isLoading) {
       return loading();
     } else if (auth.usuario == null) {
-      return LoginPage();
+      return const LoginPage();
     } else {
       return const ListScreen();
     }
