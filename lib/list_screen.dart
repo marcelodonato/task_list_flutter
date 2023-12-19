@@ -158,45 +158,52 @@ class _ListScreenState extends State<ListScreen> {
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(18.0),
             child: Column(
               children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: TextField(
-                        controller: textFieldController,
-                        onChanged: (value) {
-                          setState(() {
-                            message = value;
-                          });
-                        },
-                        decoration: const InputDecoration(
-                          hintText: 'Digite sua tarefa aqui',
+                Container(
+                  margin: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          textAlign: TextAlign.center,
+                          controller: textFieldController,
+                          onChanged: (value) {
+                            setState(() {
+                              message = value;
+                            });
+                          },
+                          decoration: const InputDecoration(
+                        
+                            hintText: 'Digite sua tarefa aqui',
+                          ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 8),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    ElevatedButton(
-                      onPressed: isAddingTask ? null : addTask,
-                      style: ElevatedButton.styleFrom(
-                        primary: const Color.fromARGB(
-                            255, 173, 216, 230), // Azul claro
-                      ),
-                      child: const Text(
-                        'Adicionar tarefa',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                    ],
+                  ),
+                ),        
+                Container(
+                  margin: const EdgeInsets.all(18.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ElevatedButton(
+                        onPressed: isAddingTask ? null : addTask,
+                        style: ElevatedButton.styleFrom(
+                          primary: const Color.fromARGB(
+                              255, 173, 216, 230), // Azul claro
+                        ),
+                        child: const Text(
+                          'Adicionar tarefa',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
             ),
