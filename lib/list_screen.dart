@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:task_list/auth_service.dart';
+import 'package:task_list/bottom_navigation.dart';
 import 'package:task_list/task_entity.dart';
 
 class ListScreen extends StatefulWidget {
@@ -175,14 +176,13 @@ class _ListScreenState extends State<ListScreen> {
                             });
                           },
                           decoration: const InputDecoration(
-                        
                             hintText: 'Digite sua tarefa aqui',
                           ),
                         ),
                       ),
                     ],
                   ),
-                ),        
+                ),
                 Container(
                   margin: const EdgeInsets.all(18.0),
                   child: Row(
@@ -251,6 +251,13 @@ class _ListScreenState extends State<ListScreen> {
                       );
                     },
                   ),
+          ),
+          Container(
+            child: BottomNavigation(
+              onListPressed: () => {},
+              onLogoutPressed: () => context.read<AuthService>().logout(),
+              onProfilePressed: () => {},
+            ),
           ),
         ],
       ),
